@@ -17,10 +17,10 @@
 }
 .header-nav ul {
     list-style: none;
+    float: right;
 }
 .header-nav ul li {
     display: inline-block;
-    float: right;
     background: #633DE1;
     padding: 10px;
     margin-left: 2px;
@@ -28,4 +28,173 @@
 .header-nav ul li a {
     text-decoration: none;
     color: #fff;
+}
+.header-nav ul li:hover, .header-nav ul li a:hover {
+    background: #fff;
+    color: #633DB0;
+}
+main {}
+aside {
+    float: left;
+    width: 30%;
+}
+.aside-section {
+}
+.aside {
+    background: #633DB0;
+    color: #fff;
+}
+.aside h2 {
+    background: #8365dcbf;
+    padding: 5px 0px 5px 10px;
+}
+.aside a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    background: #7B5BD1;
+}
+.aside a:hover {
+    background: #fff;
+    color: #633DB0;
+}
+.options {
+    background: #8365dcbf;
+    margin: 5px 0px 15px 0px;
+}
+.main-section {
+    width: 70%;
+    padding: 10px 0px 0px 20px;
+}
+.main {}
+.main p {}
+.footer-section {}
+.footer {
+    background: #633DB0;
+    color: #fff;
+}
+.footer p {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 20px;
+}
+/*User Page*/
+.user-section {}
+.user,.changepass {
+    padding: 30px 0px 0px 30px;
+}
+.user p,.changepass p {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.user input[type="text"] {
+    width: 250px;
+    padding: 10px;
+}
+.user input[type="mail"] {
+    width: 250px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.changepass input[type="password"] {
+    width: 250px;
+    padding: 10px;
+}
+/*Social Page*/
+.social-section {}
+.social {
+    padding: 20px 0px 0px 30px;
+}
+.social p {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.social input[type="text"] {
+    width: 250px;
+    padding: 10px;
+}
+input[type="submit"] {
+    padding: 10px;
+    margin-top: 10px;
+    background: #633DB0;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.main-title {
+    border-bottom: 2px dotted #7B5BD1;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    font-family: georgia;
+}
+/*Category Page*/
+.catoptions {
+    margin-top: 30px;
+}
+.cat-table {
+    width: 100%;
+}
+.cat-table th {
+    background: #686867;
+    color: #fff;
+    padding: 3px;
+}
+.cat-table tr:nth-child(2n+1) {
+    background: #ddd;
+}
+.cat-table td {
+    text-align: center;
+}
+.cat-table tr td a {
+    color: #7B5BD1;
+    text-decoration: none;
+}
+.cat-table tr td a:hover {
+    text-decoration: underline;
+}
+/*Add Article Page*/
+.add-article {}
+#text-editor {
+    box-sizing: border-box;
+    width: 540px;
+    display: block;
+}
+.add-article input[type="text"] {
+    width: 100%;
+    padding: 10px;
+}
+.add-article select {
+    width: 100%;
+    padding: 10px;
+}
+/*Login Page*/
+.loginpage {
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ddd;
+    border-radius: 20px;
+    box-shadow: 2px 4px 5px 5px #666;
+}
+.loginpage h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: cursive;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #adb9b0;
+}
+.loginpage input[type="submit"] {
+    float: right;
+    background: #666;
+    padding: 10px 35px;
+}
+.loginpage input[type="submit"]:hover {
+    background: #000;
+
+}
+.loginpage input[type="text"], input[type="password"] {
+    width: 450px;
+    padding: 10px;
 }

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel</title>
+    <title>Admin Panel || Add Article</title>
     <link rel="stylesheet" href="style.css">
+    <script src="ckeditor/ckeditor.js"></script>
 </head>
 <body>
     <header>
@@ -67,9 +68,55 @@
                     </div>
             </section>
         </aside>
-        <section class="main-section clear">
-                <div class="main clear">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempora cum voluptates, nobis dolorem ratione consequatur cupiditate deleniti recusandae ex laborum maiores quam autem maxime harum aspernatur labore deserunt obcaecati?</p>
+        <section class="social-section clear">
+                <div class="social add-article clear">
+                    <h2 class="main-title">Add Article</h2>
+                    <form action="" method="" enctype="multipart/form-data">
+                        <table>
+                            <tr>
+                                <td><p>Title :</p></td>
+                                <td><input  type="text" name="title" placeholder="Article title"></td>
+                            </tr>
+                            <tr>
+                                <td><p>Article :</p></td>
+                                <td id="text-editor">
+                                    <div id="editor"></div>
+                                    <script>
+                                        ClassicEditor
+                                            .create( document.querySelector( '#editor' ) )
+                                            .catch( error => {
+                                                console.error( error );
+                                            } );
+                                    </script>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><p>Category : </p></td>
+                                <td>
+                                    <select name="category" id="scategory">
+                                        <option value="Health">Health</option>
+                                        <option value="Sport">Sport</option>
+                                        <option value="National">National</option>
+                                        <option value="International">International</option>
+                                        <option value="Economic">Economic</option>
+                                        <option value="Education">Education</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><p>Tags :</p></td>
+                                <td><input  type="text" name="tags" placeholder="Enter tags seperated by commas"></td>
+                            </tr>
+                            <tr>
+                                <td><p>Thumbnail : </p></td>
+                                <td><input type="file"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td colspan="2"><input type="submit" value="Add"></td>
+                            </tr>
+                        </table>
+                    </form>
                 </div>
         </section>
     </main>
